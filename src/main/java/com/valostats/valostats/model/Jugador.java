@@ -28,8 +28,8 @@ public class Jugador {
     private Equip equip;
 
     //relacion con las estadisticas
-    @OneToMany (mappedBy = "jugador", cascade = CascadeType.ALL)
-    private List<Stats> estadisticas;
+    @OneToOne (mappedBy = "jugador", cascade = CascadeType.ALL)
+    private Stats stats;
 
     public Jugador() {}
 
@@ -54,8 +54,8 @@ public class Jugador {
     public Equip getEquip() { return equip; }
     public void setEquip(Equip equip) { this.equip = equip; }
 
-    public List<Stats> getestadisticas() { return estadisticas;}
-    public void setestadisticas(List<Stats> estadisticas) { this.estadisticas = estadisticas; }
+    public Stats getestadisticas() { return stats;}
+    public void setestadisticas(Stats stats) { this.stats = stats; }
 
 
 

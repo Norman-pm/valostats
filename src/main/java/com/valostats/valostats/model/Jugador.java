@@ -1,7 +1,7 @@
 package com.valostats.valostats.model;
 
 import jakarta.persistence.*;
-import java.util.List;
+
 
 @Entity
 @Table(name = "jugadors")

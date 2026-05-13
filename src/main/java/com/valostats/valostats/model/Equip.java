@@ -28,9 +28,10 @@ public class Equip {
     //@OneToMany porque un equipo puede tener muchos jugadores
     @OneToMany (mappedBy = "equip", cascade = CascadeType.ALL)
     private List<Jugador> jugadors;
+
     public Equip(){}
 
-    public Equip(String nom,String region, String pais, String Org){
+    public Equip(String nom,String region, String pais, String org){
         this.nom = nom;
         this.region = region;
         this.pais = pais;

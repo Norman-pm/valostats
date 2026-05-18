@@ -60,7 +60,24 @@ public class Stats {
     public int getDeaths() { return deaths; }
     public void setDeaths(int deaths){ this.deaths = deaths; }
 
-    public int getAssists
+    public int getAssists() { return assists; }
+    public void setAssists(int assists) { this.assists = assists; }
 
+    public int getRondas() { return rondas; }
+    public void setRondas(int rondas) { this.rondas = rondas; }
 
+    public double getKd() { return kd; }
+    public void setKd(double kd) { this.kd = kd; }
+
+    public double getHsPorcentaje() { return hsPorcentaje; }
+    public void setHsPorcentaje(double hsPorcentaje) { this.hsPorcentaje = hsPorcentaje; }
+
+    public double getRating() { return rating; }
+    public void setRating(double rating) { this.rating = rating; }
+
+    public String getTorneo() { return torneo; }
+    public void setTorneo(String torneo) { this.torneo = torneo; }
+
+    public Jugador getJugador() { return jugador; }
+    public void setJugador(Jugador jugador) { this.jugador = jugador; }
 }
